@@ -3,6 +3,7 @@ import { Spin } from "antd";
 import { AnimeContext } from "../contexts/AnimeContext";
 import DisplayAnime from "./DisplayAnime";
 import LoadMore from "./LoadMore";
+
 const Anime = () => {
   const { res, isLoading } = useContext(AnimeContext);
 

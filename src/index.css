@@ -53,6 +53,41 @@ body {
   font-weight: 600;
 }
 
+.pagination__icons {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+  -moz-transform: translatey(-50%);
+  -ms-transform: translatey(-50%);
+  -o-transform: translatey(-50%);
+  transform: translatey(-50%);
+}
+.previous__icon {
+  color: white;
+  position: fixed;
+  left: 20px;
+  font-size: 40px;
+}
+.next__icon {
+  position: fixed;
+  color: white;
+  right: 20px;
+  font-size: 40px;
+}
+.next__icon:hover {
+  cursor: pointer;
+}
+
+.previous__icon:active,
+.next__icon:active {
+  color: wheat;
+}
+
+.hide {
+  visibility: hidden;
+}
+
 body::-webkit-scrollbar,
 .anime__scrollable-container::-webkit-scrollbar {
   width: 0.1px;

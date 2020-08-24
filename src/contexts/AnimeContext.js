@@ -17,7 +17,7 @@ export const AnimeContextProvider = (props) => {
     data &&
       data.results &&
       setRes((res) => {
-        return [...new Set([...res, ...data.results.map((res) => res)])];
+        return data.results.map((res) => res);
       });
   }, [data]);
   return (
